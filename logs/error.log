@@ -102,3 +102,21 @@
 2017/01/11 12:12:26 [notice] 2818#0: signal 17 (SIGCHLD) received
 2017/01/11 12:12:26 [notice] 2818#0: worker process 7769 exited with code 0
 2017/01/11 12:12:26 [notice] 2818#0: exit
+2017/01/11 06:42:11 [alert] 24518#0: lua_code_cache is off; this will hurt performance in /home/ubuntu/load_balancing_http/conf/nginx.conf:18
+2017/01/11 06:42:11 [notice] 24518#0: using the "epoll" event method
+2017/01/11 06:42:11 [notice] 24518#0: openresty/1.11.2.2
+2017/01/11 06:42:11 [notice] 24518#0: built by gcc 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
+2017/01/11 06:42:11 [notice] 24518#0: OS: Linux 4.4.0-53-generic
+2017/01/11 06:42:11 [notice] 24518#0: getrlimit(RLIMIT_NOFILE): 1024:65536
+2017/01/11 06:42:11 [notice] 24519#0: start worker processes
+2017/01/11 06:42:11 [notice] 24519#0: start worker process 24520
+2017/01/11 06:43:23 [info] 24520#0: *1 [lua] load_balancing_webserver.lua:44: received a frame of type text and payload test2, client: 218.17.162.222, server: localhost, request: "GET /websocket HTTP/1.1", host: "52.53.179.112"
+2017/01/11 06:43:23 [info] 24520#0: *1 [lua] load_balancing_webserver.lua:54: Hello World, SENT, client: 218.17.162.222, server: localhost, request: "GET /websocket HTTP/1.1", host: "52.53.179.112"
+2017/01/11 06:44:06 [info] 24520#0: *2 client sent invalid method while reading client request line, client: 218.17.162.222, server: localhost, request: "G‹Øøz≈[◊ßªµçM≥WX@¨ã“— Âé£Lå`r9ú`·9∞ZáV„”˚≠§±¨–3ôA“SERA"
+2017/01/11 06:45:36 [info] 24520#0: *3 client sent invalid method while reading client request line, client: 218.17.162.222, server: localhost, request: "G‹Øøz≈[◊ßªµçM≥WX@¨ã“— Âé£Lå`r9ú`·9∞ZáV„”˚≠§±¨–3ôA“SERA"
+2017/01/11 06:45:54 [info] 24520#0: *4 client closed connection while waiting for request, client: 218.17.162.222, server: 0.0.0.0:80
+2017/01/11 06:45:54 [info] 24520#0: *5 client closed connection while waiting for request, client: 218.17.162.222, server: 0.0.0.0:80
+2017/01/11 06:46:34 [info] 24520#0: *6 client sent invalid method while reading client request line, client: 218.17.162.222, server: localhost, request: "G‹Øøz≈[◊ßªµçM≥WX@¨ã“— Âé£Lå`r9ú`·9∞ZáV„”˚≠§±¨–3ôA“SERA"
+2017/01/11 06:47:50 [info] 24520#0: *7 client sent invalid method while reading client request line, client: 218.17.162.222, server: localhost, request: "G‹Øøz≈[◊ßªµçM≥WX@¨ã“— Âé£Lå`r9ú`·9∞ZáV„”˚≠§±¨–3ôA“SERA"
+2017/01/11 06:49:42 [error] 24520#0: *8 [lua] ramlab_upload2file.lua:55: handle_uploading(): md5:ddb2c01afd6b0b1c7e02156e348f6266, client: 218.17.162.222, server: localhost, request: "POST /http-img HTTP/1.1", host: "52.53.179.112"
+2017/01/11 06:49:42 [info] 24520#0: *8 client 218.17.162.222 closed keepalive connection
